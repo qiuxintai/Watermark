@@ -36,8 +36,8 @@ public final class WatermarkUtils {
      * @param watermark watermark image byte array
      * @param watermarkWidth watermark image width
      * @param watermarkHeight watermark image height
-     * @param x watermark position. x >= 0 && x <= imageWidth - watermarkWidth
-     * @param y watermark position. y >= 0 && y <= imageHeight - watermarkHeight
+     * @param x, watermark coordinate x,  x >= 0 && x <= imageWidth - watermarkWidth
+     * @param y, watermark coordinate y,  y >= 0 && y <= imageHeight - watermarkHeight
      */
     public static native void add(byte[] image, int imageWidth, int imageHeight,
                                   byte[] watermark, int watermarkWidth, int watermarkHeight,
